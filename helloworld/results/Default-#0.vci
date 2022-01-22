@@ -1,0 +1,137 @@
+file 18234 1642678827                                           
+version 2
+run Default-0-20220120-18:40:10-29080
+attr configname Default
+attr datetime 20220120-18:40:10
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network helloworld
+attr processid 29080
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"helloworld.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 helloworld.node[0].veinsmobility posx ETV
+vector 1 helloworld.node[0].veinsmobility posy ETV
+vector 2 helloworld.node[0].veinsmobility speed ETV
+vector 3 helloworld.node[0].veinsmobility acceleration ETV
+vector 4 helloworld.node[0].veinsmobility co2emission ETV
+vector 5 helloworld.node[1].veinsmobility posx ETV
+vector 6 helloworld.node[1].veinsmobility posy ETV
+vector 7 helloworld.node[1].veinsmobility speed ETV
+vector 8 helloworld.node[1].veinsmobility acceleration ETV
+vector 9 helloworld.node[1].veinsmobility co2emission ETV
+vector 10 helloworld.node[2].veinsmobility posx ETV
+vector 11 helloworld.node[2].veinsmobility posy ETV
+vector 12 helloworld.node[2].veinsmobility speed ETV
+vector 13 helloworld.node[2].veinsmobility acceleration ETV
+vector 14 helloworld.node[2].veinsmobility co2emission ETV
+vector 15 helloworld.node[3].veinsmobility posx ETV
+vector 16 helloworld.node[3].veinsmobility posy ETV
+vector 17 helloworld.node[3].veinsmobility speed ETV
+vector 18 helloworld.node[3].veinsmobility acceleration ETV
+vector 19 helloworld.node[3].veinsmobility co2emission ETV
+vector 20 helloworld.node[4].veinsmobility posx ETV
+vector 21 helloworld.node[4].veinsmobility posy ETV
+vector 22 helloworld.node[4].veinsmobility speed ETV
+vector 23 helloworld.node[4].veinsmobility acceleration ETV
+vector 24 helloworld.node[4].veinsmobility co2emission ETV
+vector 25 helloworld.node[5].veinsmobility posx ETV
+vector 26 helloworld.node[5].veinsmobility posy ETV
+vector 27 helloworld.node[5].veinsmobility speed ETV
+4	4096 354 4 45 3 17 15 0.973 10.53237389643 59.251153064827 338.4165123346
+3	4450 373 4 45 3 17 15 -0.68085712243337 2.433438217896 12.881724961448 25.657065372165
+2	4823 387 3 45 2 17 16 2.0578714020317 15.471811378348 182.55058318337 2421.3799292218
+1	5210 225 2 45 1 17 17 26.6 26.6 452.2 12028.52
+0	5435 399 2 45 1 17 17 30.1 212.55058318337 1758.627490379 243602.468746
+vector 28 helloworld.node[5].veinsmobility acceleration ETV
+vector 29 helloworld.node[5].veinsmobility co2emission ETV
+vector 30 helloworld.node[6].veinsmobility posx ETV
+vector 31 helloworld.node[6].veinsmobility posy ETV
+vector 32 helloworld.node[6].veinsmobility speed ETV
+9	6115 328 16 57 6 20 15 0.973 8.9959524102036 56.228912692277 308.38928765367
+8	6443 386 16 57 6 20 15 -0.70776681792922 2.4799598257989 11.05363189968 27.540895111403
+7	6829 394 15 57 5 20 16 2.5998513045954 14.361250022204 187.38876850737 2396.6060577521
+6	7223 231 5 57 4 20 17 26.6 26.6 452.2 12028.52
+5	7454 407 5 57 4 20 17 30.1 217.38876850737 1897.1762976954 275403.60485644
+vector 33 helloworld.node[6].veinsmobility acceleration ETV
+vector 34 helloworld.node[6].veinsmobility co2emission ETV
+14	7982 383 19 61 9 24 16 0.973 8.7040756682052 57.616694552495 280.35123084008
+13	8365 427 19 61 9 24 16 -0.82940298810136 2.3342120763147 11.533763943097 24.76629431374
+12	8792 438 18 61 8 24 17 2.0844450560166 14.123590698532 192.90516943892 2437.3130596744
+11	9230 267 17 61 7 24 18 26.6 26.6 478.8 12736.08
+10	9497 453 17 61 7 24 18 30.1 222.90516943892 2019.1504174406 298864.63696799
+19	9950 416 31 73 12 27 16 1.1860399984837 6.8265814837984 52.234346880452 225.65766862273
+18	10366 431 31 73 12 27 16 -0.24113568887114 2.5643961252412 10.974127331471 21.051606251112
+17	10797 440 30 73 11 27 17 2.1927444331115 13.471823575513 188.1038958512 2285.2120330354
+16	11237 270 29 73 10 27 18 26.6 26.6 478.8 12736.08
+15	11507 455 29 73 10 27 18 30.1 218.1038958512 1998.8760657917 289889.22002504
+24	11962 424 43 87 15 32 18 0.973 7.1515017328466 56.392564348688 234.77746604191
+23	12386 484 43 87 15 32 18 -1.0304421190405 2.3424680717289 10.124139891076 23.8913363982
+22	12870 493 33 87 14 32 19 2.0575037543895 12.181643645466 193.43916044154 2120.8701680333
+21	13363 300 32 87 13 32 20 26.6 26.6 532 14151.2
+20	13663 508 32 87 13 32 20 30.1 223.43916044154 2320.0179819954 347224.64284309
+29	14171 345 46 88 18 33 16 0.973 10.623225579878 61.009301320363 384.40073120996
+28	14516 428 46 88 18 33 16 -1.4666936618818 2.5492287805071 11.383081771473 37.241696059912
+27	14944 439 45 88 17 33 17 1.341259956616 15.181010285232 184.47629368235 2273.064985125
+26	15383 270 44 88 16 33 18 26.6 26.6 478.8 12736.08
+25	15653 456 44 88 16 33 18 30.1 214.47629368235 1974.8660063047 285568.88531083
+30	16109 483 47 101 19 37 19 30.1 223.28918353475 2176.316359566 324192.0235014
+31	16592 287 47 101 19 37 19 26.6 26.6 505.4 13443.64
+32	16879 469 57 101 20 37 18 2.4894425308332 12.946926977286 193.28918353475 2252.1339461291
+33	17348 462 58 101 21 37 17 -0.70769502923358 2.2450350294122 10.348425015165 18.477825006449
+34	17810 422 58 101 21 37 17 0.973 6.9724832129418 53.415766959988 210.71899631757
+
